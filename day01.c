@@ -45,6 +45,9 @@ int main(void) {
     char* data = read_file("day01.data");
     char* token = strtok(data, "\n");
 
+    printf("Day 01\n");
+    printf("-----------------------------\n");
+
     while (token != NULL) {
         rotate(decode(token));
         printf("%i\n", dial_position);
